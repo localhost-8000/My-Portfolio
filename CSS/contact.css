@@ -1,0 +1,59 @@
+
+.bio {
+    margin: 15px;
+    padding: 10px;
+}
+
+.bio h2 {
+    margin-bottom: 5px;
+    padding-left: 4px;
+    border-bottom: 2px solid red;
+    width: 8rem;
+    font-size: 1.9rem;
+    text-shadow: 1px 1px #f66666;
+}
+
+.bio p {
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #0037ffe0;
+    letter-spacing: 0.09rem;
+}
+
+.profile-links {
+    margin: 15px;
+    padding: 8px;
+}
+
+.profile-links h2 {
+    font-size: 1.8rem;
+    width: 19rem;
+    border-bottom: 2px solid rgb(209, 24, 24);
+    text-shadow: 1px 1px #f66666;
+}
+
+.profile-links a {
+    position: relative;
+    top: 20px;
+    left: 5px;
+    margin: 5px 20px;
+    padding: 4px 8px;
+    border: 2px solid #1c1e19d6;;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    background: radial-gradient(#c9e918, #ff0505);
+    box-shadow: 2px 2px 2px #a6d791;
+}
+
+
+@media only screen and (max-width: 360px) {
+    .profile-links a {
+        display: block;
+        text-align: center;
+    }
+    .profile-links a:last-of-type {
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,94 @@
+.experiences {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.exp {
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 10px 5px;
+    margin-bottom: 15px;
+    padding: 4px 5px;
+    display: flex;
+    flex-flow: column nowrap;
+    background: linear-gradient(70deg, #98bcc28a, #776c7c6b);
+}
+
+.header {
+    padding: 3px 4px;
+    border-bottom: 2px solid red;
+    font-size: 1.01rem;
+}
+
+.middle {
+    margin: 7px 4px;
+    padding: 4px;
+    display: flex;
+    flex-flow: row nowrap;
+    /* border: 1px solid black; */
+    font-size: 1.05rem;
+}
+
+.duration {
+    position: relative;
+    left:  0px;
+    padding: 2px 4px;
+}
+
+.location {
+    position: relative;
+    left: 60%;
+    padding: 2px 4px;
+}
+
+.description {
+    /* border: 1px solid black; */
+    margin: 3px 4px;
+    padding: 3px 5px;
+    font-size: 1.02rem;
+}
+
+.description p {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+.attachments {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 5px 2px;
+}
+
+.attachments a {
+    border: 1px solid black;
+    margin: 5px 15px;
+    padding: 2px 8px;
+    text-decoration: none;
+    background: gray;
+    border-radius: 6px;
+    color: black;
+    box-shadow: 1px 1px 1px black;
+}
+
+.attachments a:hover {
+    background: rgb(109, 105, 105);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .middle {
+        justify-content: space-between;
+    }
+    .duration {
+        position: static;
+    }
+    .location {
+        position: static;
+    }
+    .attachments {
+        justify-content: space-between;
+    }
+}

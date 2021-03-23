@@ -1,0 +1,230 @@
+
+/* .graduation {
+    border: 2px solid red; 
+    height: 47%;
+} */
+
+.content {
+    /* border: 2px solid black; */
+    display: flex;
+}
+
+#college-content {
+    flex-flow: row nowrap;
+}
+
+#school-content {
+    flex-flow: row-reverse nowrap;
+}
+
+.header {
+    border-bottom: 2px solid black;
+    color: #49959d;
+    margin-left: 5px;
+    margin-right: 50px;
+    padding-left: 10px;
+    padding-top: 2px;
+    font-size: 0.90rem;
+    text-shadow: 1px 1px 3px black;
+}
+
+.details {
+    width: 60%;
+    /* height: 100%; */
+    /* border: 2px solid black; */
+    margin-top: 2px;
+    padding-top: 4px;
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+.details h2 {
+    text-align: center;
+    text-shadow: .5px 0.5px 1px #6395b8;
+}
+
+.middle {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: 8px 15px;
+    padding: 2px 4px;
+}
+.middle h3 {
+    font-size: 1.3rem;
+    text-shadow: 1px 0px 2px #914545;
+}
+
+.duration {
+    font-weight: bold;
+    color: #dbc7b2;
+}
+
+.achievements {
+    margin: 0px 5px;
+    font-size: 1.1rem;
+}
+
+.achievements p {
+    padding: 3px 0px;
+    text-align: center;
+    color: #e7a8a8;
+}
+
+#college-achievements p {
+    text-shadow: 2px 1px 1px black;
+}
+
+#school-achievements p {
+    color: #f18585;
+    text-shadow: 2px 2px 1px #000000;
+}
+
+.achievements a {
+    text-decoration: none;
+    font-family: cursive;
+    color: #14f6cc;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: 1px solid red;
+}
+
+.attachments {
+    width: 50%;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.attachments a {
+    text-decoration: none;
+    border: 1px solid red;
+    border-radius: 7px;
+    background: linear-gradient(red, orange);
+    box-shadow: 2px 2px 1px #5b4646;
+    padding: 4px 5px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+/* .intermediate {
+    border: 2px solid blue;
+    height: 53%;
+} */
+
+
+
+.images {
+    width: 40%;
+    /* border: 2px solid black; */
+    padding: 4px 5px 4px 4px;
+    margin: 5px 5px;
+    
+}
+
+.images img {
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+#nit-img img {
+    max-height: 270px;
+}
+
+#jnv-img img {
+    max-height: 280px;
+}
+
+
+
+/* =====================Media queries============================================= */
+
+/* @media only screen and (min-width: 1285px) {
+    #nit-img img{
+        max-height: 275px;
+    }
+    #jnv-img img {
+        max-height: 300px;
+    }
+    .attachments {
+        margin-top: 37px;
+    }
+}
+
+@media only screen and (max-width: 1285px) and (min-width: 1050px)  {
+    .graduation {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 800px) {
+    .content-body {
+        min-height: 93.9vh;
+        /* overflow-y: scroll; */
+    /* }
+    .graduation {
+        height: 50%;
+    }
+    .intermediate {
+        position: relative;
+        top: 5%;
+        min-height: max-content;
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content-body {
+        min-height: 93.9vh;
+        overflow-y: scroll;
+    }
+    .graduation {
+        border: 2px solid black;
+        height: 95%;
+    }
+    .intermediate {
+        min-height: max-content;
+    }
+    .middle {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .duration {
+        padding-top: 5px;
+    }
+} */
+
+@media only screen and (max-width: 1050px) {
+    .graduation {
+        border-bottom: 2px dotted black;
+    }
+    #college-content {
+        flex-flow: column-reverse nowrap;
+    }
+    #school-content {
+        flex-flow: column-reverse nowrap;
+    }
+    .images {
+        width: 85%;
+        margin: 5px 8px;
+    }
+    .images img {
+        max-height: 200px;
+    }
+    .details {
+        width: 93%;
+    }
+    .middle {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .duration {
+        margin-top: 5px;
+    }
+    .attachments {
+        width: 100%;
+    }
+}
