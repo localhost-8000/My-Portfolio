@@ -160,12 +160,12 @@
 }
 
 .image img{
-    width: 45%;
+    width: 50%;
     /* position: absolute; */
     /* bottom: 5px; */
-    /* height: 50%; */
+    height: 50%;
     border: 2px solid black;
-    border-radius: 50%;
+    border-radius: 48%;
     /* margin: 1px auto; */
 }
 
@@ -181,6 +181,72 @@
     font-size: 1.08rem;
     letter-spacing: 0.06rem;
 }
+
+/* body:not(.popUp) {
+    filter: blur(2px);
+} */
+.popUp {
+    position: absolute;
+    /* top: 40vh;
+    right: 40vw; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50vw;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* text-align: center; */
+    background-color: rgba(133, 94, 84, 0.596);
+    box-shadow: 1px 1px 3px 1px black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+#linkedIn {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    border: 1px solid rgba(17, 17, 17, 0.87);
+    border-radius: 8px;
+    cursor: pointer;
+}
+#email {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px 4px 0px;
+    border: 1px solid rgba(17, 17, 17, 0.87);
+    border-radius: 8px;
+}
+#gitHub {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.87);
+    border-radius: 8px;
+}
+.pop-btn {
+    /* display: inline-block; */
+    width: 75%;
+    padding:  4px;
+    font-size: 1.1em;
+    background: rgba(17, 17, 17, 0.87);
+    color: white;
+    text-decoration: none;
+}
+.hide {
+    display: none;
+}
+
+
+
 /* ============================================================================= */
 
 

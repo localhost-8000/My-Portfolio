@@ -54,3 +54,26 @@ window.onload = function() {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #fff}";
     document.body.appendChild(css);
 };
+
+const popUp = document.querySelector(".popUp")
+const contentBody = document.querySelector(".content-body")
+document.querySelector("#contact-btn").addEventListener("click", () => {
+    var classes = popUp.className.split(" ")
+    let i = classes.indexOf("hide")
+    if(i >= 0) {
+        classes.splice(i, 1);
+    }
+    else {
+        classes.push("hide");
+    }
+    popUp.className = classes.join(" ");
+    // alert("hlw")
+    contentBody.style.filter = "blur(2px)"
+})
+
+contentBody.addEventListener("click", () => {
+    if(!popUp.classList.contains("hide")) {
+        popUp.classList.toggle("hide")
+        contentBody.style.filter = "blur(0px)"
+    }
+}, capture='True')
