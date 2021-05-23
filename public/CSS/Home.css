@@ -1,0 +1,298 @@
+.global-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 6px;
+    padding: 4px;
+    font-size: 1.3rem;
+    color: #fcc7dd;
+    text-shadow: 2px 2px 4px #e51558;
+}
+
+/* ========Header animation====================================================== */
+
+.anime-h2 {
+    width: 22.1em;
+    overflow: hidden;
+    border-right: .15em solid rgba(15, 14, 14, 0.904); 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+        typing 10s steps(40),
+        blink-caret .75s steps(40) infinite normal;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 22.1em }
+}
+  
+@keyframes blink-caret {
+    from{border-right-color: rgba(15, 14, 14, 0.904);}
+    to{border-right-color: transparent;}
+}
+
+/* =========================================================================== */
+
+.content-part {
+    display: flex;
+    /* width: 100vw; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* =================Left Content body===================================== */
+
+.left-content {
+    width: 70%;
+    /* border: 2px solid black; */
+    height: 60vh;
+    margin-top: 3rem;
+}
+
+.left-content-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 15px 28px 15px 0px;
+    padding: 8px 15px 8px 0px;
+    /* border: 1px solid black; */
+    font-size: 1.4rem;
+    text-shadow: 2px 2px 5px #ed1d1dd1;
+    /* text-shadow: 2px 2px 5px #c261fed1; */
+}
+
+.left-content-content {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 28px 15px 0px;
+    padding: 8px 15px 8px 0px;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: black;
+    text-shadow: 2px 2px 6px #c42424;
+}
+
+.left-content-content h3 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.left-content-content h3 a {
+    text-decoration: none;
+    color: rgb(20, 5, 5);
+    /* margin: 15px 2px 10px 2px; */
+    /* border: 1px solid black; */
+}
+
+.left-content-content span {
+    /* background-color: rebeccapurple; */
+    padding: 3px 5px;
+    /* background: linear-gradient(50deg, rgba(226, 159, 159, 0.637), rgba(162, 154, 167, 0.541)); */
+    /* box-shadow: 0px 1px 3px 1px rgb(43, 35, 35); */
+    letter-spacing: 0.3rem;
+    /* text-shadow: none; */
+}
+
+.buttons {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+    margin: 35px 10px 15px 10px;
+}
+
+.btn {
+    /* box-shadow: 1px 1px 5px 0px #2a2828; */
+    cursor: pointer;
+    background-color: #ffffff52;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to top right, #281880, #f87e7e);
+    border-image-slice: 1;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to top right,#281880, #f87e7e);
+    color: white;
+}
+
+#hire-btn {
+    width: 10rem;
+    font-size: 1.1rem;
+    margin: 30px 2px 10px 2px;
+    padding: 0.30rem 0.50rem;
+}
+#contact-btn {
+    width: 10rem;
+    font-size: 1.1rem;
+    margin: 30px 2px 10px 2px;
+    padding: 0.30rem 0.50rem;
+}
+
+/* ============================================================================== */
+
+/* ===============Right content body=============================================== */
+
+.right-content {
+    width: 30%;
+    margin-top: 3rem;
+    /* border: 2px solid yellow; */
+    /* position: relative; */
+}
+
+.image {
+    /* position: relative; */
+    margin-top: 3rem;
+    margin-left: 4rem;
+    /* right: 10%; */
+    /* border: 1px solid black; */
+}
+
+.image img{
+    width: 50%;
+    /* position: absolute; */
+    /* bottom: 5px; */
+    height: 50%;
+    border: 2px solid black;
+    border-radius: 48%;
+    /* margin: 1px auto; */
+}
+
+
+.summary {
+    /* border: 1px solid black; */
+    margin: 25px 28px 15px 8px;
+    padding: 8px 15px 8px 8px;
+    text-align: center;
+}
+
+.summary p {
+    font-size: 1.08rem;
+    letter-spacing: 0.06rem;
+}
+
+/* body:not(.popUp) {
+    filter: blur(2px);
+} */
+.popUp {
+    position: absolute;
+    /* top: 40vh;
+    right: 40vw; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50vw;
+    height: 150px;
+    border: 1px solid black;
+    border-radius: 8px;
+    /* text-align: center; */
+    background-color: rgba(133, 94, 84, 0.596);
+    box-shadow: 1px 1px 3px 1px black;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+#linkedIn {
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+    margin-bottom: 4px;
+    border: 1px solid rgba(17, 17, 17, 0.87);
+    border-radius: 8px;
+    cursor: pointer;
+}
+#email {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0px 4px 0px;
+    border: 1px solid rgba(17, 17, 17, 0.87);
+    border-radius: 8px;
+}
+#gitHub {
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-bottom: 6px;
+    border: 1px solid rgba(17, 17, 17, 0.87);
+    border-radius: 8px;
+}
+.pop-btn {
+    /* display: inline-block; */
+    width: 75%;
+    padding:  4px;
+    font-size: 1.1em;
+    background: rgba(17, 17, 17, 0.87);
+    color: white;
+    text-decoration: none;
+}
+.hide {
+    display: none;
+}
+
+
+
+/* ============================================================================= */
+
+
+/* =====================Media queries============================================= */
+
+@media only screen and (max-width: 750px) {
+    .content-part {
+        flex-flow: column-reverse nowrap;
+    }
+    .right-content {
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+    .image {
+        position: static;
+        width: 45%;
+        margin: 0;
+        /* margin: 1px auto; */
+    }
+    .image img {
+        width: 50%;
+        margin-left: 85%;
+    }
+    .left-content {
+        width: 100%;
+    }
+    .left-content-header {
+        margin: 12px 10px 12px 10px;
+        padding: 6px 2px;
+    }
+    .left-content-content {
+        margin: 13px 10px 10px 10px;
+        padding: 6px 3px;
+    }
+    .buttons {
+        margin: 13px 10px 10px 10px;
+        padding: 6px 3px;
+    }
+    .summary {
+        margin: 16px 10px 20px 10px;
+        padding: 8px 8px 15px 8px;
+    }
+    .anime-h2 {
+        white-space: normal;
+        animation: normal;
+        border-right: none;
+        letter-spacing: normal;
+    }
+}

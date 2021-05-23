@@ -1,0 +1,24 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My personal portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ankur-9598/My-Portfolio.git"
+  },
+  "author": "Rahul Tiwari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ankur-9598/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/Ankur-9598/My-Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  }
+}
