@@ -31,7 +31,11 @@ app.route("/educations")
 
 
 
+<<<<<<< HEAD
 var port = process.env.PORT || 8000
+=======
+var port = process.env.PORT || 3000
+>>>>>>> 737a7fa310c5c3ea1e4381353e78525471880032
 
 app.listen(port, () => {
     console.log(`Server started at port ${port}`);
