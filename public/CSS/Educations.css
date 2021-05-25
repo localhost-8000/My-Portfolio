@@ -19,13 +19,13 @@
 
 .header {
     border-bottom: 2px solid black;
-    color: #49959d;
+    color: black;
     margin-left: 5px;
     margin-right: 50px;
     padding-left: 10px;
     padding-top: 2px;
     font-size: 0.90rem;
-    text-shadow: 1px 1px 3px black;
+    /* text-shadow: 1px 1px 3px black; */
 }
 
 .details {
@@ -40,7 +40,7 @@
 
 .details h2 {
     text-align: center;
-    text-shadow: .5px 0.5px 1px #6395b8;
+    text-shadow: .5px 0.5px 1px #6395b885;
 }
 
 .middle {
@@ -52,39 +52,42 @@
 }
 .middle h3 {
     font-size: 1.3rem;
-    text-shadow: 1px 0px 2px #914545;
+    text-shadow: 1px 0px 2px #9145457a;
 }
 
 .duration {
     font-weight: bold;
-    color: #dbc7b2;
+    font-size: 1.1rem;
+    color: black;
+    text-shadow: 1px 0px 2px #9145457a;
 }
 
 .achievements {
     margin: 0px 5px;
     font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 .achievements p {
     padding: 3px 0px;
     text-align: center;
-    color: #e7a8a8;
+    color: black;
 }
 
-#college-achievements p {
+/* #college-achievements p {
     text-shadow: 2px 1px 1px black;
-}
+} */
 
-#school-achievements p {
+/* #school-achievements p {
     color: #f18585;
     text-shadow: 2px 2px 1px #000000;
-}
+} */
 
 .achievements a {
     text-decoration: none;
-    font-family: cursive;
-    color: #14f6cc;
-    text-shadow: 2px 2px 2px black;
+    /* font-family: cursive; */
+    color: #360f08;
+    /* text-shadow: 2px 2px 2px black; */
     border-bottom: 1px solid red;
 }
 
@@ -96,10 +99,10 @@
 
 .attachments a {
     text-decoration: none;
-    border: 1px solid red;
+    border: 1px solid black;
     border-radius: 7px;
-    background: linear-gradient(red, orange);
-    box-shadow: 2px 2px 1px #5b4646;
+    background: linear-gradient(rgb(221, 110, 110), rgb(143, 142, 141));
+    box-shadow: 2px 2px 1px #333232;
     padding: 4px 5px;
     color: black;
     margin-bottom: 5px;
