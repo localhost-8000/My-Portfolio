@@ -25,20 +25,21 @@
 
 .description {
     /* border: 1px solid black; */
-    margin: 5px 4px;
+    margin: 5px 10px;
     padding: 3px 5px;
     font-size: 1.02rem;
 }
 
 .description p {
     /* border: 1px solid black; */
-    padding: 3px 0px;
+    padding: 4px 2px;
     text-align: center;
 }
 
 .attachments {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-around;
     margin: 5px 2px;
 }
 

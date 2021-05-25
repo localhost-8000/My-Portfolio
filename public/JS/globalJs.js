@@ -2,6 +2,7 @@ const sideNavBtn = document.querySelector(".collapsible");
 const sideNav = document.querySelector(".sidenav");
 const closeBtn = document.querySelector(".closebtn");
 const navItems = document.querySelectorAll(".nav-items a")
+const activeElem = document.querySelector("#active")
         
 sideNavBtn.addEventListener('click', () => {
     sideNav.style.width = "380px";
@@ -12,14 +13,12 @@ closeBtn.addEventListener('click', () => {
     sideNav.style.width = "0px"
 });
 
-navItems.forEach((navItem) => {
-    navItem.addEventListener("click", () => {
-        let currentElem = document.querySelector(".active");
-        currentElem.className = currentElem.className.replace("active", "");
-        navItem.className += "active";
-        // navItem.parentElement.className.addEventListener("mouseover", () => {
-        //     navItem.style.color = "red"
-        // })
-    })
-})
+// activeElem.addEventListener('mouseover', () => {
+//     activeElem.parentElement.classList.toggle("nav-item")
+//     // console.log("hello");
+// })
 
+// activeElem.addEventListener('mouseout', () => {
+//     activeElem.parentElement.classList.toggle("nav-item")
+//     // console.log("bye");
+// })

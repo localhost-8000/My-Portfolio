@@ -36,9 +36,14 @@
 /* =============Logo==================================================== */
 
 .logo-container {
-    margin-left: 8px;
+    margin-left: 12px;
     font-size: 1.30em;
-    color: #b70bef
+    /* color: #b4ceef; */
+    /* color: #dd4848; */
+    padding: 4px 10px;
+    background: linear-gradient(#d52f2f 20%, #454040 99%);
+    border: 1px solid #000;
+    border-radius: 24px;
 }
 
 /* ========================================================================= */
@@ -59,7 +64,8 @@
 
 .nav-item a {
     text-decoration: none;
-    color: #ff0081;
+    /* color: #7bc1f3; */
+    color: #d63030;
     font-size: 1.15em;
     padding: 4px 4px;
     padding-left: 8px;
@@ -80,8 +86,8 @@
       left: 50%;
       right: 50%;
       bottom: 0;
-      background: #ff0081;
-      height: 4px;
+      background: #d63030;
+      height: 3.2px;
       -webkit-transition-property: left right;
       transition-property: left right;
       -webkit-transition-duration: 0.3s;
@@ -94,14 +100,15 @@
     color: rgb(208, 217, 241);
 }
 .nav-item a:hover:before {
-    left: 0;
-    right: 0;
+    left: 5px;
+    right: 5px;
 }
 
 #active {
-    background: #201c1c;
-    box-shadow: 1px 1px 5px 1px #959494;
-    color: white;
+    background: #171616;
+    box-shadow: 1px 1px 4px 0.5px #f6a3a3b3;
+    color: #d63030;
+    border-radius: 10px;
 }
 
 /* ======================================================================= */
@@ -132,7 +139,7 @@
     z-index: 11;
     top: 0;
     right: 0;
-    background-color: #f6bae3;
+    background: linear-gradient(135deg, #c87878, #958d8d);
     overflow-x: hidden;
     padding-top: 15px;
     transition: width 0.5s ease-in;
@@ -143,20 +150,20 @@
     padding: 8px 8px 1px 20px;
     text-decoration: none;
     font-size: 25px;
-    color: #010176;
+    color: black;
     display: block;
     transition: 0.5s;
 }
 
 .collapsible-nav-item {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     margin: 15px 44px 0px 10px;
 }
 
 
 .collapsible-nav-item:hover {
-    color: red;
-    border-bottom: 1px solid #ff83d3;
+    color: #fef9f9;
+    border-bottom: 1px solid #ff1616;
     transition: all 0.2s ease-in;
 }
 
@@ -177,6 +184,17 @@
     /* border: 1px solid black; */
 }
 
+/* .footer {
+    border: 1px solid black;
+    margin: 10px auto;
+    text-align: center;
+    height: 5%;
+    width: 50%;
+    position: fixed;
+    bottom: 0px;
+    left: 25%;
+    margin-bottom: 0px;
+} */
 
 
 
@@ -189,5 +207,10 @@
     }
     .collapsible-nav-item {
         margin-top: 32px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }

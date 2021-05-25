@@ -1,5 +1,5 @@
 .experiences {
-    border: 2px solid black;
+    /* border: 2px solid black; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -23,30 +23,31 @@
 }
 
 .middle {
-    margin: 7px 4px;
+    margin: 6px 4px 2px 4px;
     padding: 4px;
     display: flex;
     flex-flow: row nowrap;
     /* border: 1px solid black; */
     font-size: 1.05rem;
+    justify-content: space-between;
 }
 
 .duration {
-    position: relative;
-    left:  0px;
+    /* position: relative;
+    left:  0px; */
     padding: 2px 4px;
 }
 
 .location {
-    position: relative;
-    left: 60%;
+    /* position: relative;
+    left: 60%; */
     padding: 2px 4px;
 }
 
 .description {
     /* border: 1px solid black; */
-    margin: 3px 4px;
-    padding: 3px 5px;
+    margin: 1px 4px 3px 4px;
+    padding: 1px 5px 3px 5px;
     font-size: 1.02rem;
 }
 
@@ -59,6 +60,7 @@
     display: flex;
     flex-flow: row nowrap;
     margin: 5px 2px;
+    justify-content: space-around;
 }
 
 .attachments a {
