@@ -18,8 +18,9 @@
 
 .header {
     padding: 3px 4px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #762222;
     font-size: 1.01rem;
+    text-align: center;
 }
 
 .middle {

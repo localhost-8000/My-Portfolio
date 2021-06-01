@@ -27,6 +27,7 @@
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
+    z-index: 1;
     
     background: rgb(73 58 58);
     padding: 8px;
@@ -163,7 +164,7 @@
 
 .collapsible-nav-item:hover {
     color: #fef9f9;
-    border-bottom: 1px solid #ff1616;
+    border-bottom: 1px solid black;
     transition: all 0.2s ease-in;
 }
 
