@@ -21,6 +21,7 @@
     padding: 3px 4px;
     border-bottom: 2px solid #16279f;
     font-size: 1.01rem;
+    text-align: center;
 }
 
 .description {
@@ -59,6 +60,11 @@
 }
 
 
+@media only screen and (min-width: 950px) {
+    .project {
+        margin: 12px 15px 10px 15px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .attachments {
