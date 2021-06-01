@@ -24,8 +24,8 @@
 }
 
 .middle {
-    margin: 6px 4px 2px 4px;
-    padding: 4px;
+    margin: 5px 4px 1px 4px;
+    padding: 2px;
     display: flex;
     flex-flow: row nowrap;
     /* border: 1px solid black; */
@@ -45,6 +45,11 @@
     padding: 2px 4px;
 }
 
+.spn {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 .description {
     /* border: 1px solid black; */
     margin: 1px 4px 3px 4px;

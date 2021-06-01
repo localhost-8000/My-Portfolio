@@ -53,6 +53,7 @@
     border-radius: 6px;
     color: black;
     box-shadow: 1px 1px 1px black;
+    text-align: center;
 }
 
 .attachments a:hover {
@@ -69,5 +70,8 @@
 @media only screen and (max-width: 600px) {
     .attachments {
         justify-content: space-between;
+    }
+    .description {
+        margin: 5px 2px;
     }
 }
